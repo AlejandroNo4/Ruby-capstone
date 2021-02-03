@@ -1,10 +1,12 @@
-#spec/bot_spec.rb
+# frozen_string_literal: true
+
+# spec/bot_spec.rb
 
 require_relative '../lib/bot'
 
 describe Calculator do
-  describe "#add" do
-    it "returns the sum of two numbers" do
+  describe '#add' do
+    it 'returns the sum of two numbers' do
       calculator = Calculator.new
       expect(calculator.add(5, 2)).to eql(7)
     end
