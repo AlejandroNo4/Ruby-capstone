@@ -38,31 +38,69 @@ As another characteristic, if you ask what you should do? You will always receiv
 Additionally, you can tell the bot "Thanks" / "Bye" and "Goodbye." You will also receive a reply.
 
 <br/>
+<p align="center">
+<img src="app_screenshot.png" width="400" />
+</p>
 <br/>
 
 ## Installation
+> 1.- Be sure that you fill out all the requirements.
+### Requirements
+- Terminal basic knowledge.
+- Ruby 2.6.0 or a later version.
+- Github account and basic knowledge in the usage
+- Telegram
+- Telegram API Token
 
-This project is a digital version of this fun toy. To run it, you must have access to a terminal. If you don't know what it this, [click here](https://launchschool.com/books/command_line/read/introduction) for more information about this topic. :)
+**If you need clarification on some of these, please read the "Requirements Information" ↓**
 
-Also, you must have ruby installed on your computer. If you don't have it but wish to, [click here](https://www.ruby-lang.org/en/documentation/installation/) for the instructions.
+### Requeriments Information (optional / begginers)
 
-In the same way, a [GitHub](https://github.com/) account. 
+- **Terminal basic knowledge:** This project is a digital version of this fun toy. To run it, you must have access to a terminal. If you don't know what it this, [click here](https://launchschool.com/books/command_line/read/introduction) for more information about this topic. :)
 
-Once you have all this, at first, you have to clone the repository, [here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) you can find out how to make this possible.
+- **Ruby 2.6.0 or a later version:** Also, you must have ruby installed on your computer. If you don't have it but wish to, [click here](https://www.ruby-lang.org/en/documentation/installation/) for the instructions.
 
-Hold on here! Now, you need a Telegram Token to run the program. Fortunately, it is simple! Just install the Telegram app on your computer (if you don't have it already) and follow [these](https://www.siteguarding.com/en/how-to-get-telegram-bot-api-token) simple steps.
+- **Github account and basic knowledge in the usage:** In the same way, a [GitHub](https://github.com/) account. <br/> You will have to clone the repository, [here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) you can find out how to make this possible.
 
-Inside the Ruby-capstone folder that you just cloned from Github, open with the text editor (right-click -> open with -> TextEdit)
+- **Telegram API Token:** Hold on here! Now, you need a Telegram Token to run the program. Fortunately, it is simple! Just install the Telegram app on your computer (if you don't have it already, do it [here](https://desktop.telegram.org/)) and follow [these](https://www.siteguarding.com/en/how-to-get-telegram-bot-api-token) simple steps.
 
-Now in the [token = ''] line, copy your token inside the ''. e.g. token = 'YOUR-TOKEN-HERE'. And save the file.
+> 2.- Clone this repository. 
 
-Now that you have the repository in your local machine. Change the direction of the local file with your terminal. Just open the Terminal, type "$ cd" (without the $ sign), and the path to reach the Ruby-capstone/lib folder.
+- Open the terminal and type $ git clone https://github.com/AlejandroNo4/Ruby-capstone.git <br/> (remember, without the "$")
 
-e.g. "$ cd User/Documents/Ruby-capstone/lib"
+> 3.- Add the Telegram Token to the bot.rb file
 
-You are done! Now to run the code, just type "$ ruby bot.rb" and open Telegram. In the searcher look for MagicConchChell (user @ConchNo4Bot) and send it a message. 
+- Inside the Ruby-capstone folder that you just cloned from Github, go to the bin folder and open the bot.rb file with the text editor (right-click -> open with -> TextEdit)
+<p align="center">
+<img src="./img/instructions_img/step_3.png" width="500"/>
+</p>
 
-Have fun!
+- Now you should see something like this:
+<p align="center">
+<img src="./img/instructions_img/step_3_2.png" width="500"/>
+</p>
+
+- In the [token = 'YOUR TOKEN GOES HERE'] line, copy your token inside the single quotes. And save the file.
+<p align="center">
+<img src="./img/instructions_img/step_3_3.png" width="500"/>
+</p>
+<br/>
+
+> 4.- Run the bot.rb file from the terminal
+
+- Now that you have the repository in your local machine. Change the direction of the local file with your terminal. Just open the Terminal, type "$ cd" (without the $ sign), and the path to reach the Ruby-capstone/bin folder. <br/><br/> e.g. "$ cd User/Documents/Ruby-capstone/bin"
+
+- You are done! Now to run the code, just type "$ ruby bot.rb" 
+
+> 5.- Open Telegram
+
+- Once you are logged, in the searcher look for MagicConchChell. Please be sure that the user is  @ConchNo4Bot.
+<p align="center">
+<img src="./img/instructions_img/step_5.png" width="400"/>
+</p>
+<br/>
+
+> 6.- Send it a message and have fun!
 
 <br/>
 <br/>
@@ -74,14 +112,17 @@ Have fun!
 - Git
 - Telegram API
 
-<p align="center">
-<img src="app_screenshot.png" width="400" />
-</p>
-
-<br/>
 <br/>
 
-## Getting Started
+## Running RSpec tests instructions
+
+### If you want to check the tests:
+- Go to your terminal and change the direction to the Ruby-capstone folder. "$ cd User/Documents/Ruby-capstone/"
+- Type "$ rspec" and hit enter.
+
+<br/>
+
+## Resume
 
 **Please, before starting, verify that you accomplish the Requirements to continue.**
 
@@ -98,12 +139,15 @@ To get a local copy up and running follow these simple example steps.
 - Clone this repository into tour computer
 - Get a Telegram API token
 - Set the token in the bot.rb file
-
-### Usage
-- In your Terminal, change the direction to the folder you just cloned, to the lib folder.
+- In your Terminal, change the direction to the folder you just cloned, to the bin folder.
 - Run the script file using the ruby bot.rb 
 - Open Telegram and look for the MagicConchShell bot
 - Have Fun!
+
+### Usage
+
+Send to the bot a question. 
+- Write a simple question ("yes" / "no" / "or" type). Otherwise, you will receive a "try it again" reply.
 
 ## Author
 
@@ -117,8 +161,12 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [Issues page](https://github.com/AlejandroNo4/Tic-Tac-Toe/issues).
+Feel free to check the [Issues page](https://github.com/AlejandroNo4/Ruby-capstone/issues).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+## Acknowledgement 👾
+
+- Valentin, feel free to visit his [YouTube](https://www.youtube.com/channel/UCbTe2uHWiMWIN2eW9_ViqPQ) channel.
