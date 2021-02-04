@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # spec/bot_spec.rb
 
 require_relative '../lib/main'

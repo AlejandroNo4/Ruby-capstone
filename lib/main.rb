@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # Assigns the reply varible its value depending on the message
 class Answer
   attr_reader :reply, :simple_answer, :option_answer
@@ -15,9 +13,9 @@ class Answer
     @reply = case message.downcase
              when /\bor\b/
                @option_answer
-             when /\sdo\s/
+             when /\bwhat\sshould|\sdo\s/
                '../img/nothing.jpg'
-             when /else\sbut\sno|when\s|how/
+             when /else\sbut\sno|\bwhen\s|\bhow\s|\bwhat\s|\bwhy\s|\bwhere\s|\bwho\s/
                '../img/try_again.jpg'
              else
                @simple_answer
