@@ -35,4 +35,6 @@ class Answer
   def ans_img(message)
     message[-1, 1] == '?' ? question(message) : no_question(message)
   end
+
+  private :question, :no_question
 end

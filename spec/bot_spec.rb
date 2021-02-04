@@ -58,3 +58,23 @@ describe Answer do
     end
   end
 end
+
+describe Answer do
+  describe '.ans_img' do
+    let(:ans_test) { Answer.new }
+    context 'negative tests' do
+      it "It will answer 'try it again' if it's not a question" do
+        ans_test.ans_img('am i wrong')
+        expect(ans_test.reply).not_to eql(ans_test.simple_answer)
+      end
+      it "It will answer 'try it again' if it's a where question" do
+        ans_test.ans_img('where is it?')
+        expect(ans_test.reply).not_to eql(ans_test.simple_answer)
+      end
+      it "It will answer a 'simple question' if the 'or' question is misspelled" do
+        ans_test.ans_img('this orthat?')
+        expect(ans_test.reply).not_to eql(ans_test.option_answer)
+      end
+    end
+  end
+end
