@@ -50,7 +50,7 @@ In the same way, a [GitHub](https://github.com/) account.
 
 Once you have all this, at first, you have to clone the repository, [here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) you can find out how to make this possible.
 
-Hold on here! Now, you need a Telegram token to run the program. Fortunately, it is simple! Just install the Telegram app on your computer (if you don't have it already) and follow [these](https://www.siteguarding.com/en/how-to-get-telegram-bot-api-token) simple steps.
+Hold on here! Now, you need a Telegram Token to run the program. Fortunately, it is simple! Just install the Telegram app on your computer (if you don't have it already) and follow [these](https://www.siteguarding.com/en/how-to-get-telegram-bot-api-token) simple steps.
 
 Inside the Ruby-capstone folder that you just cloned from Github, open with the text editor (right-click -> open with -> TextEdit)
 

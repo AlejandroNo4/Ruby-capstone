@@ -1,7 +1,7 @@
 require 'telegram/bot'
-require_relative 'main'
+require_relative '../lib/answers'
 
-token = ''
+token = '1625240950:AAEqgLKzTrt0nWXc1LlXg117qR9pryH_mBI'
 
 Telegram::Bot::Client.run(token) do |bot|
   bot.listen do |message|

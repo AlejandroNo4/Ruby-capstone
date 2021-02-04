@@ -1,4 +1,3 @@
-# Assigns the reply varible its value depending on the message
 class Answer
   attr_reader :reply, :simple_answer, :option_answer
 

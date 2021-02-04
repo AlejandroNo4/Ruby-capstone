@@ -1,6 +1,4 @@
-# spec/bot_spec.rb
-
-require_relative '../lib/main'
+require_relative '../lib/answers'
 
 describe Answer do
   describe '.ans_img' do
